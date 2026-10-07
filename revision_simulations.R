@@ -1,9 +1,4 @@
-# Gaussian examples, statistical functions, and simulations for the revised paper.
-# Requires R and mvtnorm: install.packages("mvtnorm")
-# Run: Rscript revision_simulations.R
-# Results are created in a results/ folder beside this script.
-# No tuning uses evaluation data. Pilot-selected caps are evaluated on fresh paths;
-# the thresholds, weights, and betting grids are specified below.
+
 if (!requireNamespace("mvtnorm", quietly=TRUE)) stop("mvtnorm is required")
 args <- commandArgs(trailingOnly=FALSE)
 filearg <- sub("^--file=", "", args[grepl("^--file=", args)])
