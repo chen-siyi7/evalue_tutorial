@@ -1,8 +1,4 @@
-# Statistical functions and simulations for Bernoulli and Poisson outcomes.
-# Requires base R only. Run: Rscript non_gaussian_simulations.R
-# Results are created in a results/ folder beside this script.
-# Exact binary and count outcomes are used without normal approximation.
-# All choices below are fixed before the evaluation simulations are generated.
+
 args <- commandArgs(FALSE)
 filearg <- sub("^--file=", "", args[grepl("^--file=", args)])
 if(length(filearg)!=1L) stop("Run this script with Rscript.")
